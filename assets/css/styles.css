@@ -29,7 +29,7 @@
 
 .field {
   grid-area: 2 / 2 / 12 /12;
-  outline: 3px solid black;
+  outline: 2px solid black;
   display: grid;
   grid-template-columns: repeat(10, 50px);
   grid-template-rows: repeat(10, 50px);
