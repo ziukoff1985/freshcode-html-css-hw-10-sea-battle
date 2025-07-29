@@ -6,13 +6,15 @@
 
 .field-container {
   display: grid;
-  grid-template-columns: repeat(11, 1fr);
-  grid-template-rows: repeat(11, 1fr);
-  width: 1000px;
-  height: 1000px;
-  margin: 20px auto;
-  border: 2px solid black;
-  padding: 20px;
+  grid-template-columns: repeat(11, 50px);
+  grid-template-rows: repeat(11, 50px);
+  width: 550px;
+  height: 550px;
+  margin: 50px auto;
+  outline: 3px solid black;
+  /* padding: 20px; */
+  justify-content: center;
+  align-content: center;
 }
 
 .markup-cell {
@@ -30,8 +32,18 @@
 
 .field {
   grid-area: 2 / 2 / 12 /12;
-  border: 2px solid black;
+  outline: 2px solid black;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(10, 1fr);
+  justify-content: center;
+  align-content: center;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.375) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.375) 1px, transparent 1px);
+  background-size: 50px 50px;
+  background-position: left left;
 }
