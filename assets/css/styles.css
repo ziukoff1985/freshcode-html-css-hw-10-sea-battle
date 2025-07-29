@@ -38,7 +38,7 @@
 
 .ship-field {
   grid-area: 2 / 2 / 12 /12;
-  outline: 2px solid var(--border-color);
+  outline: 3px solid var(--border-color);
   display: grid;
   grid-template-columns: repeat(10, var(--cell-side-size));
   grid-template-rows: repeat(10, var(--cell-side-size));
