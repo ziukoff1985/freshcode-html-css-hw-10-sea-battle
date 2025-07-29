@@ -3,3 +3,35 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.field-container {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: repeat(11, 1fr);
+  width: 1000px;
+  height: 1000px;
+  margin: 20px auto;
+  border: 2px solid black;
+  padding: 20px;
+}
+
+.markup-cell {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.markup-cell:first-child {
+  background-color: #000000;
+}
+
+.field {
+  grid-area: 2 / 2 / 12 /12;
+  border: 2px solid black;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+}
