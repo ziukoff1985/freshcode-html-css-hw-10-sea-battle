@@ -55,7 +55,7 @@
     ". . . . j j j j j j";
 }
 
-.ship-sell {
+.ship-cell {
   outline: 1px solid var(--border-color);
 }
 
