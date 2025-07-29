@@ -27,7 +27,7 @@
   background-color: #000000;
 }
 
-.field {
+.ship-field {
   grid-area: 2 / 2 / 12 /12;
   outline: 2px solid black;
   display: grid;
