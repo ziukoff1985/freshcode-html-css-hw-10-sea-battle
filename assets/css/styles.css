@@ -12,8 +12,6 @@
   height: 550px;
   margin: 50px auto;
   outline: 4px solid black;
-  justify-content: center;
-  align-content: center;
 }
 
 .markup-cell {
@@ -33,10 +31,8 @@
   grid-area: 2 / 2 / 12 /12;
   outline: 3px solid black;
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(10, 1fr);
-  justify-content: center;
-  align-content: center;
+  grid-template-columns: repeat(10, 50px);
+  grid-template-rows: repeat(10, 50px);
   grid-template-areas:
     "a a . b . . c c c c"
     ". . . b . . . . . ."
