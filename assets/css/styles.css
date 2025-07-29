@@ -4,18 +4,27 @@
   box-sizing: border-box;
 }
 
+:root {
+  --border-color: #000000;
+  --cell-side-size: 50px;
+  --two-cells-ship-color: #7f007f;
+  --three-cells-ship-color: #00ff01;
+  --four-cells-ship-color: #0000ff;
+  --six-cells-ship-color: #ff4800;
+}
+
 .field-container {
   display: grid;
-  grid-template-columns: repeat(11, 50px);
-  grid-template-rows: repeat(11, 50px);
-  width: 550px;
-  height: 550px;
-  margin: 50px auto;
-  outline: 4px solid black;
+  grid-template-columns: repeat(11, var(--cell-side-size));
+  grid-template-rows: repeat(11, var(--cell-side-size));
+  width: calc(11 * var(--cell-side-size));
+  height: calc(11 * var(--cell-side-size));
+  margin: var(--cell-side-size) auto;
+  outline: 4px solid var(--border-color);
 }
 
 .markup-cell {
-  outline: 1px solid black;
+  outline: 1px solid var(--border-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,15 +33,15 @@
 }
 
 .markup-cell:first-child {
-  background-color: #000000;
+  background-color: var(--border-color);
 }
 
 .ship-field {
   grid-area: 2 / 2 / 12 /12;
-  outline: 2px solid black;
+  outline: 2px solid var(--border-color);
   display: grid;
-  grid-template-columns: repeat(10, 50px);
-  grid-template-rows: repeat(10, 50px);
+  grid-template-columns: repeat(10, var(--cell-side-size));
+  grid-template-rows: repeat(10, var(--cell-side-size));
   grid-template-areas:
     "a a . b . . c c c c"
     ". . . b . . . . . ."
@@ -47,29 +56,25 @@
 }
 
 .ship-sell {
-  outline: 1px solid black;
+  outline: 1px solid var(--border-color);
 }
 
 .ship-1,
 .ship-6,
 .ship-7,
 .ship-9 {
-  background-color: #7f007f;
+  background-color: var(--two-cells-ship-color);
 }
 
 .ship-2,
 .ship-5,
 .ship-8 {
-  background-color: #00ff01;
+  background-color: var(--three-cells-ship-color);
 }
 
 .ship-3,
 .ship-4 {
-  background-color: #0000ff;
-}
-
-.ship-10 {
-  background-color: #ff4800;
+  background-color: var(--four-cells-ship-color);
 }
 
 .ship-1 {
@@ -110,4 +115,5 @@
 
 .ship-10 {
   grid-area: j;
+  background-color: var(--six-cells-ship-color);
 }
