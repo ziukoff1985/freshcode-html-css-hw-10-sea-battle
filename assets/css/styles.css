@@ -53,6 +53,13 @@
     "i i . . . . . . . h"
     ". . . . . . . . . ."
     ". . . . j j j j j j";
+
+  /* ✅ Альтернативний варіант через градієнтний фон */
+
+  /* background-image: linear-gradient(to right, black 1px, transparent 1px),
+    linear-gradient(to bottom, black 1px, transparent 1px);
+  background-size: 50px 50px;
+  background-repeat: repeat; */
 }
 
 .ship-cell {
